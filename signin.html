@@ -2,17 +2,45 @@
 
 <head>
     <title>pollingapp/signin</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .back button{
+            cursor: pointer;
+        }
+        #submit{
+            cursor: pointer;
+        }
+        .tt{
+            height: 30px;
+            width: 200px;
+        }
+        #password{
+            margin-left: 64px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="login">
+    <h1>Login</h1>
+    <div>
     <label for="username">Username or Email:</label>
-    <input type="text" id="username" name="username" required><br><br>
-
+    <input type="text" class="tt" id="username" name="username" required><br><br>
+</div><div>
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
+    <input type="password"class="tt" id="password" name="password" required><br><br>
+</div>
+<div>
+    <input type="submit" id="submit" value="Login">
 
-    <input type="submit" value="Login">
-
-    <a href="index.html"><button>Back to home</button></a>
+    <a class="back" href="index.html" style="cursor: pointer;"><button>Back to home</button></a>
+</div>
+</div>
 </body>
 </html>
