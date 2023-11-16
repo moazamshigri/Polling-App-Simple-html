@@ -4,24 +4,76 @@
     <title>
         pollingapp/signup
     </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: baseline;
+            display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#firstname{
+    height: 30px;
+    width: 199px;
+}
+#lastname{
+    height: 30px;
+    width:200px ;
+}
+
+#password{
+    height: 30px;
+    width:200px ;
+    margin-left: 64px;
+}
+        .tt{
+            margin-left:55px;
+        }
+        #email{
+            margin-left: 30px;
+            height: 30px;
+    width:200px ;
+        }
+        
+    </style>
 </head>
 
 <body>
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname"><br><br>
-
-   
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname">
-    <br><br>
     
+    <div class="signup">
+        <h1>Sign Up</h1><br><br>
+    <div>
+    <label for="firstname">First Name:</label>
+    <input type="text" class="tt" id="firstname"><br><br>
+</div>
+   <div>
+    <label for="lastname">Last Name:</label>
+    <input type="text" class="tt"  id="lastname">
+    <br><br></div>
+    
+    <div>
     <label for="email">Email Address:</label>
-    <input type="text" name="email"   id="email">
-    <br><br>
-    <label for="password">Password</label>
-<input type="password" id="password">
-<br><br><button>Signup</button>
-<a href="index.html"><button>Back to home</button></a>
+    <input type="text"   name="email"   id="email">
+    <br><br></div>
 
+    <div>
+    <label for="password">Password:</label>
+<input type="password" class="tt" id="password">
+<br><br></div>
+
+<div style="display: flex ;">
+<button style="height: 24px;
+padding: 12px;display: flex; margin-right: 12px; align-items: center; cursor: pointer;">Signup</button>
+<a href="index.html" style="text-decoration: none;"><button style="height: 24px;
+    padding: 12px;display: flex; align-items: center; text-decoration: none; cursor: pointer;">Back to home</button></a>
+</div>
+</div>
 </body>
 </html>
